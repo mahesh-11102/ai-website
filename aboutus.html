@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+</head>
+
+<body>
+    <div id="nv">
+        <nav>
+            <div class="logo">
+                <img src="./res/images/logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li id="home"><a href="index.html"> <i id="home_icon " class="fa fa-home" style="font-size:30px;" ></i> Home</a></li>
+                <li><a href="#"> <i id="home_icon " class="fa fa-users" style="font-size:25px; margin-right: 5px;" ></i>About US</a></li>
+<!-- 
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+    <section>
+        <img src="res/images/bg.jpg" alt="bg" id="bg">
+        <img src="res/images/moon.png" alt="moon" id="moon">
+        <img src="res/images/mountain.png " alt="mountain" id="mountain">
+        <img src="res/images/road.png" alt="road" id="road">
+        <h2 id="text"> ABOUT US</h2>
+    </section>
+    <div class="team">
+        <h1> Out Team</h1>
+        <div class="imag">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/Manognya Pic.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Manognya Dasika<br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/ujawala.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Manognya Dasika
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img id="'p2" src="res/images/p2.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Manognya Dasika
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/p3.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Manognya Dasika
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="res/images/p4.jpeg">
+                </div>
+                <div class="content">
+                    <h2>
+                        Manognya Dasika
+                        <br>
+                        <span>Website Developer</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1.2 + 'px';
+        });
+    </script>
+</body>
+
+</html>
